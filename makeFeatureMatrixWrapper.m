@@ -1,5 +1,5 @@
 clc
-root_path = "C:\Users\lavee\Documents\Semester_1\Data Mining\Assignment2\MyoData";
+root_path = ".\MyoData";
 dirs = dir(root_path);
 dir_inside = dirs(3).name;
 pattern = ["eating", "noneating"];
