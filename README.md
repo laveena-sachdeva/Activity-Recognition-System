@@ -28,14 +28,14 @@ Now, we use 60% of the 30 users as our training data. So all the eating and non-
 
 Expected Directory Structure:
 
-./groundTruth/user<number>/fork/<file>
-./MyoData/user<number>/fork/<file>
-./fetch_records.py
-./phase2.py
-./phase3.py
-./matlab/makeFeatureMatrixWrapper.m
-./matlab/makeMakeMatrix.m
-./matlab/feature_functions.m
+./groundTruth/user<number>/fork/<file> 
+./MyoData/user<number>/fork/<file> 
+./fetch_records.py 
+./phase2.py 
+./phase3.py 
+./matlab/makeFeatureMatrixWrapper.m 
+./matlab/makeMakeMatrix.m 
+./matlab/feature_functions.m 
 
 ## Results
 
