@@ -1,7 +1,7 @@
 
-### Activity Recognition
+# Activity Recognition System
 
-# Description
+## Description
 We use Myo armbands to capture Accelerometer, Gyroscope, Orientation and EMG data for daily actvities. We then extract features from that raw data, apply dimensionality reduction technqiues and then train classification models on that data in reduced dimensions to distinguish between eating and non-eating activities.
 
 For feature extraction, we have used the following five feature extraction methods:
@@ -13,7 +13,7 @@ For feature extraction, we have used the following five feature extraction metho
 5. Discrete Wavelet Transform.
 6. Power Spectral Density
 
-# Please note that we are using fork data in the eating dataset.
+#### Please note that we are using fork data in the eating dataset.
 
 1. fetch_records.py: This program reads the ground_truth file for each user and separates the IMU file into eating and non-eating for each interval in the MtoData/user/fork directory with the name as eating_user<number>_<start_idx>_<end_index>.csv and noneating_user<number>_<start_idx>_<end_index>.csv
 
