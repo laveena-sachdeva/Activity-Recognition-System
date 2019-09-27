@@ -11,11 +11,6 @@ classdef makeFeatureMatrix
 
                 selectedActions = {'eatingIMU', 'noneatingIMU'};
                 EAT_features = [2,3,4,5,6,8,9,10,11];
-                %KEYBOARD_features = { 'gyroX', 'gyroZ', 'pitch' };
-                %EAT_EMG_features = {'emg1', 'emg3', 'emg4'};
-                %KEYBOARD_EMG_features = { 'emg1','emg3','emg4', 'emg6','emg8'};
-
-
                     %file name will be passed into the function
                     rawData = readtable(file_name);
                     %disp("Print raw_data")
@@ -46,42 +41,15 @@ classdef makeFeatureMatrix
                                 dwtFeaturesValues = feature_functions.dwtFeatures(input);
                                 featureMatrix1 = cat(2, featureMatrix1, dwtFeaturesValues');
 
-                                %calculate Mean for every choosed attributes  
+                                %calculate Mean for every chosen attributes  
                                 meanValues = mean(input);
                                 featureMatrix1 = cat(2, featureMatrix1, meanValues);
 
-                                %calculate STD for every choosed attributes
+                                %calculate STD for every chosen attributes
                                 stdValues = std(input);
                                 featureMatrix1 = cat(2, featureMatrix1, stdValues);
 
                             end
-                %         case {2,4,6,8}
-                %             %if action is selectedEatFood_EMG, use EAT_EMG_features
-                %             for feature = 1:length(EAT_EMG_features)
-                %                 input = table2array(rawData(1:end, feature));
-                %                 
-                %                 %apply FFT & pick 3 peak values
-                %                 fftFeaturesValues = fftFeatures(input,L);
-                %                 featureMatrix1 = cat(2, featureMatrix1, fftFeaturesValues');
-                %                 
-                %                 %apply PSD & pick 3 peak values
-                %                 psdFeaturesValues = psdFeatures(input);
-                %                 featureMatrix1 = cat(2, featureMatrix1, psdFeaturesValues');
-                %                 
-                %                 %apply DWT & pick 3 peak values
-                %                 dwtFeaturesValues = dwtFeatures(input);
-                %                 featureMatrix1 = cat(2, featureMatrix1, dwtFeaturesValues');
-                %                 
-                %                 %calculate Mean for every choosed attributes  
-                %                 meanValues = mean(input);
-                %                 featureMatrix1 = cat(2, featureMatrix1, meanValues);
-                %                 
-                %                 %calculate STD for every choosed attributes
-                %                 stdValues = std(input);
-                %                 featureMatrix1 = cat(2, featureMatrix1, stdValues);
-                %                 
-                %             end
-                            %xlswrite(strcat(char(selectedActions(action-1)),'_FeatureMatrix.xlsx'),featureMatrix1);
                             disp('EatFeatureMatrix is made')
                             disp(size(featureMatrix1))
 
@@ -93,7 +61,6 @@ classdef makeFeatureMatrix
 
 
 
-            % function which performs FFT and returns the top 3 peak values.
             
     end
 end
