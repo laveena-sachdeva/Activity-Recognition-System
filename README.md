@@ -45,3 +45,9 @@ In our training and testing for phase 2 and phase 3 using the fork data for all 
 
 Also, for our data and experiments, DST outperforms the other two classifiers based on the accuracy measures.
 
+## Authors  
+1. Ajit Mali  
+2. Jaehyo Jeong  
+3. Laveena Sachdeva  
+4. Manish Seal  
+5. Sagar Patni  
