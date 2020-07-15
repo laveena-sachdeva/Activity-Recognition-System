@@ -2,7 +2,7 @@
 # Activity Recognition System
 
 ## Description
-We use Myo armbands to capture Accelerometer, Gyroscope, Orientation and EMG data for daily actvities. We then extract features from that raw data, apply dimensionality reduction technqiues and then train classification models on that data in reduced dimensions to distinguish between eating and non-eating activities.
+We use Myo armbands to capture Accelerometer, Gyroscope, Orientation and EMG data for daily activities. We then extract features from that raw data, apply dimensionality reduction techniques and then train classification models on that data in reduced dimensions to distinguish between eating and non-eating activities.
 
 For feature extraction, we have used the following five feature extraction methods:
 
